@@ -19,6 +19,13 @@ To use this package : *add the dependency to your [pubspec.yaml] file
 ## use case
 
 ```dart
-
-
+   onPressed: () {
+     Navigator.push(
+       context,
+       WaveTransition(
+        child: SecondScreen(),
+        center: FractionalOffset(0.90, .90)
+      )
+     );
+   },
 ```

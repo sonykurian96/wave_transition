@@ -11,7 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  wave_transition:
+
 
 dev_dependencies:
   flutter_test:
