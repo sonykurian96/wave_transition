@@ -1,7 +1,7 @@
 name: wave_transition
-description: A flutter package which helps you to create amazing wave transitions.
+description: A flutter package which helps you create amazing wave transitions.
 version: 0.0.1
-author: Sony Kurian<sonykurian96@gmail.com>
+#author: Sony Kurian<sonykurian96@gmail.com>
 homepage: https://github.com/sonykurian96/wave_transition
 
 environment:
