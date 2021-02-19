@@ -10,7 +10,7 @@ class WaveTransition<T> extends PageRouteBuilder<T>{
   final Widget child;
 
   final FractionalOffset center;
-  
+
   final Duration duration;
 
   WaveTransition({

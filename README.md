@@ -1,14 +1,24 @@
 # wave_transition
 
-A new Flutter package.
+A flutter package which helps you to create amazing wave transitions
+without any boilerplate code.
 
-## Getting Started
+## usage
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+[Example] (example github link)
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+To use this package : *add the dependency to your [pubspec.yaml] file
+
+```yaml
+   dependencies:
+     flutter:
+       sdk: flutter
+     wave_transition:
+```
+
+## use case
+
+```dart
+
+
+```
