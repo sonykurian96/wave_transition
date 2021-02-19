@@ -24,8 +24,9 @@ To use this package : *add the dependency to your [pubspec.yaml] file
        context,
        WaveTransition(
         child: SecondScreen(),
-        center: FractionalOffset(0.90, .90)
+        center: FractionalOffset(0.90, 0.90)
+        duration: Duration(milliseconds: 1000) // optional
       )
-     );
-   },
+   );
+ },
 ```
