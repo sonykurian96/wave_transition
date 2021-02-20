@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Transition extends StatelessWidget {
-  Transition({
-    @required this.targetPage,
-    @required this.fromCenter,
-    this.duration
-  });
+  Transition(
+      {@required this.targetPage, @required this.fromCenter, this.duration});
 
   final Widget targetPage;
 

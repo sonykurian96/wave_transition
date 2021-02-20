@@ -5,27 +5,22 @@ library wave_transition;
 import 'package:flutter/material.dart';
 import 'transition.dart';
 
-class WaveTransition<T> extends PageRouteBuilder<T>{
-
+class WaveTransition<T> extends PageRouteBuilder<T> {
   final Widget child;
 
   final FractionalOffset center;
 
   final Duration duration;
 
-  WaveTransition({
-    @required this.child,
-    @required this.center,
-    this.duration
-  }) : super(
-    opaque: false,
-    pageBuilder: (context, animation, _) {
-      return Transition(
-        targetPage: child,
-        fromCenter: center,
-        duration: duration,
-      );
-    },
-  );
+  WaveTransition({@required this.child, @required this.center, this.duration})
+      : super(
+          opaque: false,
+          pageBuilder: (context, animation, _) {
+            return Transition(
+              targetPage: child,
+              fromCenter: center,
+              duration: duration,
+            );
+          },
+        );
 }
-
