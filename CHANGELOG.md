@@ -1,3 +1,3 @@
-## [0.0.1] - Release
+## [0.0.2] - Modified README.md
 
-* Simple Wave Transition library written in dart.
+* Example gif file Added.
