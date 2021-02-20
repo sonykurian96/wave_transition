@@ -3,7 +3,7 @@
 A flutter package which helps you create amazing wave transitions
 without any boilerplate code.
 
-![](https://im2.ezgif.com/tmp/ezgif-2-63bbf8d939e5.gif)
+![example](https://user-images.githubusercontent.com/67534990/108588638-48d72700-7380-11eb-958f-371f8b7d7b27.gif)
 
 ## Getting Started
 
