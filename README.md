@@ -32,3 +32,11 @@ To use this package : *add the dependency to your [pubspec.yaml] file
    );
  },
 ```
+
+You can pass arguments using RouteSettings ->
+
+```dart
+    settings: RouteSettings(
+      arguments: "yeah! it works!"
+    )
+```

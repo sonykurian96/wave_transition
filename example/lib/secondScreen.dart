@@ -21,6 +21,8 @@ class _SecondScreenState extends State<SecondScreen> {
 
   @override
   Widget build(BuildContext context) {
+    String _data = ModalRoute.of(context).settings.arguments;
+    print(_data);
     return Scaffold(
       appBar: AppBar(
         title: Text("Enjoy!!!"),

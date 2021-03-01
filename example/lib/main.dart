@@ -148,7 +148,12 @@ class _FirstScreenState extends State<FirstScreen> {
               WaveTransition(
                   child: SecondScreen(),
                   center: FractionalOffset(0.90, 0.90),
-                  duration: Duration(milliseconds: 3000)));
+                  duration: Duration(milliseconds: 3000),
+                  settings: RouteSettings(
+                    arguments: "yeah! it works!"
+                  )
+                  ),
+              );
         },
       ),
     );
