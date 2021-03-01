@@ -12,8 +12,9 @@ class WaveTransition<T> extends PageRouteBuilder<T> {
 
   final Duration duration;
 
-  WaveTransition({@required this.child, @required this.center, this.duration})
+  WaveTransition({@required this.child, @required this.center, this.duration,RouteSettings settings})
       : super(
+      settings: settings,
           opaque: false,
           pageBuilder: (context, animation, _) {
             return Transition(
