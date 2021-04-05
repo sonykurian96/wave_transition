@@ -1,7 +1,6 @@
 # wave_transition
 
-A flutter package which helps you create amazing wave transitions
-without any boilerplate code.
+The package will provide smooth wave transitions between pages without having to write any boilerplate code.
 
 ![example](https://user-images.githubusercontent.com/67534990/108588638-48d72700-7380-11eb-958f-371f8b7d7b27.gif)
 
