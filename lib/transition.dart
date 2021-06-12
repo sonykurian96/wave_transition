@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class Transition extends StatelessWidget {
   Transition(
-      {@required this.targetPage, @required this.fromCenter, this.duration});
+      {
+        required this.targetPage, required this.fromCenter, this.duration});
 
   final Widget targetPage;
 
@@ -10,20 +11,16 @@ class Transition extends StatelessWidget {
   final FractionalOffset fromCenter;
 
   // duration of transition
-  final Duration duration;
+  final Duration? duration;
 
   @override
   Widget build(BuildContext context) {
-    bool check() {
-      if (duration != null) return true;
-      return false;
-    }
-
+   
     return TweenAnimationBuilder(
       tween: Tween(begin: 0.0, end: 1.0),
-      duration: check() ? duration : Duration(milliseconds: 1500),
+      duration: duration ?? Duration(milliseconds: 1500),
       child: targetPage,
-      builder: (context, value, child) {
+      builder: (context, dynamic value, child) {
         return ShaderMask(
           blendMode: BlendMode.modulate,
           shaderCallback: (rect) {
@@ -37,6 +34,7 @@ class Transition extends StatelessWidget {
               stops: [0.0, 0.55, 0.6, 1.0],
               center: fromCenter,
               radius: value * 5,
+          
             ).createShader(rect);
           },
           child: child,
@@ -45,3 +43,4 @@ class Transition extends StatelessWidget {
     );
   }
 }
+

@@ -10,9 +10,9 @@ class WaveTransition<T> extends PageRouteBuilder<T> {
 
   final FractionalOffset center;
 
-  final Duration duration;
+  final Duration? duration;
 
-  WaveTransition({@required this.child, @required this.center, this.duration,RouteSettings settings})
+  WaveTransition({required this.child,required this.center, this.duration ,RouteSettings? settings})
       : super(
       settings: settings,
           opaque: false,
