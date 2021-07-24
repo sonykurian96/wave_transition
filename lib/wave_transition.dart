@@ -6,15 +6,24 @@ import 'package:flutter/material.dart';
 import 'transition.dart';
 
 class WaveTransition<T> extends PageRouteBuilder<T> {
+
+  // target widget should be passed here
   final Widget child;
 
+  // set alignment 
   final FractionalOffset center;
 
+  // duration of animation
   final Duration? duration;
 
-  WaveTransition({required this.child,required this.center, this.duration ,RouteSettings? settings})
+  // main widget
+  WaveTransition(
+      {required this.child,
+      required this.center,
+      this.duration,
+      RouteSettings? settings})
       : super(
-      settings: settings,
+          settings: settings,
           opaque: false,
           pageBuilder: (context, animation, _) {
             return Transition(

@@ -49,7 +49,7 @@ packages:
       name: cupertino_icons
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.3"
+    version: "1.0.3"
   fake_async:
     dependency: transitive
     description:
@@ -152,12 +152,10 @@ packages:
   wave_transition:
     dependency: "direct main"
     description:
-      path: "."
-      ref: HEAD
-      resolved-ref: b5304402cd098bcb01ca5452be76c7111fcc1c34
-      url: "https://github.com/sonykurian96/wave_transition.git"
-    source: git
-    version: "0.0.2"
+      name: wave_transition
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.4"
 sdks:
   dart: ">=2.12.0 <3.0.0"
   flutter: ">=1.17.0"

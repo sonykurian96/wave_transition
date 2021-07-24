@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 // ignore: must_be_immutable
 class Custom extends StatelessWidget {
   Custom(
-      {@required this.answer,
-      @required this.videoLink,
-      @required this.question,
-      @required this.customRaisedButton,
-      @required this.isVisible});
+      {required this.answer,
+      required this.videoLink,
+      required this.question,
+      required this.customRaisedButton,
+      required this.isVisible});
 
   String videoLink;
   String question;
@@ -46,7 +46,7 @@ class Custom extends StatelessWidget {
                   onPressed: () {},
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30.0),
-                      side: BorderSide(color: Colors.orange[500])),
+                      side: BorderSide(color: Colors.orange[500]!)),
                 ),
                 trailing: customRaisedButton,
               ),

@@ -19,8 +19,8 @@ class FirstScreen extends StatefulWidget {
 class _FirstScreenState extends State<FirstScreen> {
   bool isSwitched = false;
 
-  bool isChecked1 = false;
-  bool isChecked2 = false;
+  bool? isChecked1 = false;
+  bool? isChecked2 = false;
   bool isAscending = false;
 
   @override
@@ -101,7 +101,7 @@ class _FirstScreenState extends State<FirstScreen> {
                   CheckboxListTile(
                     title: Text("According to difficulty level"),
                     controlAffinity: ListTileControlAffinity.trailing,
-                    onChanged: (bool value) {
+                    onChanged: (bool? value) {
                       setState(() {
                         isChecked1 = value;
                       });
@@ -111,7 +111,7 @@ class _FirstScreenState extends State<FirstScreen> {
                   CheckboxListTile(
                     title: Text("According to weightage"),
                     controlAffinity: ListTileControlAffinity.trailing,
-                    onChanged: (bool value) {
+                    onChanged: (bool? value) {
                       setState(() {
                         isChecked2 = value;
                       });
@@ -144,16 +144,13 @@ class _FirstScreenState extends State<FirstScreen> {
         backgroundColor: Colors.orange[500],
         onPressed: () {
           Navigator.push(
-              context,
-              WaveTransition(
-                  child: SecondScreen(),
-                  center: FractionalOffset(0.90, 0.90),
-                  duration: Duration(milliseconds: 3000),
-                  settings: RouteSettings(
-                    arguments: "yeah! it works!"
-                  )
-                  ),
-              );
+            context,
+            WaveTransition(
+                child: SecondScreen(),
+                center: FractionalOffset(0.90, 0.90),
+                duration: Duration(milliseconds: 3000),
+                settings: RouteSettings(arguments: "yeah! it works!")),
+          );
         },
       ),
     );

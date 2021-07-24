@@ -1,3 +1,7 @@
+## [0.0.5] - 24/07/2021
+
+* Updated license file.
+
 ## [0.0.4] - 12/06/2021
 
 * Supports null safety.
